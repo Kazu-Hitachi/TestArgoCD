@@ -11,7 +11,7 @@ replicaCount: 1
 # -- Strategy for updating the deployment
 strategy: {}
 image:
-  repository: ghcr.io/open-webui/pipelines
+  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/ghcr.io/open-webui/pipelines@sha256:53858fbba70f55171d21eff5820f202cac43babf4e627f01472105407982d49a
   tag: main
   pullPolicy: Always
 

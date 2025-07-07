@@ -119,8 +119,7 @@ diagnosticMode:
 ## @param image.debug Specify if debug values should be set
 ##
 image:
-  registry: docker.io
-  repository: bitnami/postgresql
+  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/postgresql@sha256:00f50837cfdf0558b6c497baca104d01266a577547cd095ddad7306a90ea81ea
   tag: 17.5.0-debian-12-r16
   digest: ""
   ## Specify a imagePullPolicy
@@ -1597,8 +1596,7 @@ volumePermissions:
   ## @param volumePermissions.image.pullSecrets Init container volume-permissions image pull secrets
   ##
   image:
-    registry: docker.io
-    repository: bitnami/os-shell
+    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
     tag: 12-debian-12-r47
     digest: ""
     pullPolicy: IfNotPresent
@@ -1706,8 +1704,7 @@ metrics:
   ## @param metrics.image.pullSecrets Specify image pull secrets
   ##
   image:
-    registry: docker.io
-    repository: bitnami/postgres-exporter
+    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/postgres-exporter@sha256:6850fb35892b96556f6e25c711f7dee8e3456f87def1ad54806b5e83d714f63b
     tag: 0.17.1-debian-12-r11
     digest: ""
     pullPolicy: IfNotPresent
