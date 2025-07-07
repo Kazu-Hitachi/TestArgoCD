@@ -21,30 +21,30 @@ annotations:
   licenses: MIT
 dependencies:
   - name: ollama
-    repository: https://otwld.github.io/ollama-helm/
+    repository: https://github.com/Kazu-Hitachi/TestArgoCD/ollama-1.23.0/ollama
     version: '>=0.24.0'
     import-values:
       - child: service
         parent: ollama.service
     condition: ollama.enabled
   - name: pipelines
-    repository: https://helm.openwebui.com
+    repository: https://github.com/Kazu-Hitachi/TestArgoCD/pipelines-0.7.0/pipelines
     version: '>=0.0.1'
     import-values:
       - child: service
         parent: pipelines.service
     condition: pipelines.enabled
   - name: tika
-    repository: https://apache.jfrog.io/artifactory/tika
+    repository: https://github.com/Kazu-Hitachi/TestArgoCD/tika-2.9.0/tika
     version: '>=2.9.0'
     condition: tika.enabled
   - name: redis
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://github.com/Kazu-Hitachi/TestArgoCD/redis-21.2.7/redis
     version: '>=20.6.2'
     alias: redis-cluster
     condition: redis-cluster.enabled
   - name: postgresql
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://github.com/Kazu-Hitachi/TestArgoCD/postgresql-16.7.15/postgresql
     version: '>=15.5.38'
     alias: postgresql
     condition: postgresql.enabled

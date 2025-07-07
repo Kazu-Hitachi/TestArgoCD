@@ -13,7 +13,7 @@ apiVersion: v2
 appVersion: 17.5.0
 dependencies:
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: https://github.com/Kazu-Hitachi/TestArgoCD/common-2.31.3/common
   tags:
   - bitnami-common
   version: 2.x.x
