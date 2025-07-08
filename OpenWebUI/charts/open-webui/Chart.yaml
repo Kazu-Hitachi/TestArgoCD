@@ -19,7 +19,7 @@ sources:
   - https://charts.bitnami.com/bitnami
 annotations:
   licenses: MIT
-dependencies:
+# dependencies:
   # - name: ollama
   #   repository: https://github.com/Kazu-Hitachi/ollama
   #   version: '>=0.24.0'
@@ -27,24 +27,24 @@ dependencies:
   #     - child: service
   #       parent: ollama.service
   #   condition: ollama.enabled
-  - name: pipelines
-    repository: https://github.com/Kazu-Hitachi/TestArgoCD/pipelines-0.7.0/pipelines
-    version: '>=0.0.1'
-    import-values:
-      - child: service
-        parent: pipelines.service
-    condition: pipelines.enabled
-  - name: tika
-    repository: https://github.com/Kazu-Hitachi/TestArgoCD/tika-2.9.0/tika
-    version: '>=2.9.0'
-    condition: tika.enabled
-  - name: redis
-    repository: https://github.com/Kazu-Hitachi/TestArgoCD/redis-21.2.7/redis
-    version: '>=20.6.2'
-    alias: redis-cluster
-    condition: redis-cluster.enabled
-  - name: postgresql
-    repository: https://github.com/Kazu-Hitachi/TestArgoCD/postgresql-16.7.15/postgresql
-    version: '>=15.5.38'
-    alias: postgresql
-    condition: postgresql.enabled
+  # - name: pipelines
+  #   repository: https://github.com/Kazu-Hitachi/TestArgoCD/pipelines-0.7.0/pipelines
+  #   version: '>=0.0.1'
+  #   import-values:
+  #     - child: service
+  #       parent: pipelines.service
+  #   condition: pipelines.enabled
+  # - name: tika
+  #   repository: https://github.com/Kazu-Hitachi/TestArgoCD/tika-2.9.0/tika
+  #   version: '>=2.9.0'
+  #   condition: tika.enabled
+  # - name: redis
+  #   repository: https://github.com/Kazu-Hitachi/TestArgoCD/redis-21.2.7/redis
+  #   version: '>=20.6.2'
+  #   alias: redis-cluster
+  #   condition: redis-cluster.enabled
+  # - name: postgresql
+  #   repository: https://github.com/Kazu-Hitachi/TestArgoCD/postgresql-16.7.15/postgresql
+  #   version: '>=15.5.38'
+  #   alias: postgresql
+  #   condition: postgresql.enabled
