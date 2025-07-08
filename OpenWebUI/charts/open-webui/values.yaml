@@ -145,7 +145,7 @@ serviceAccount:
 # ref: <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry>
 # imagePullSecrets: []
 imagePullSecrets:
- - name: es-registry-secret
+ - name: docker-registry
 
 # -- Probe for liveness of the Open WebUI container
 # ref: <https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes>
