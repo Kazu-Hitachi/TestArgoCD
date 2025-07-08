@@ -64,7 +64,7 @@ websocket:
       annotations: {}
     # -- Redis image
     image:
-      repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/redis@sha256:5fd679dbad4f101639b55d1c49a2aedfc15a2e7ddc43a83b783671b8d9541134
+      repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/redis
       tag: 7.4.2-alpine3.21
       pullPolicy: IfNotPresent
     # -- Redis command (overrides default)

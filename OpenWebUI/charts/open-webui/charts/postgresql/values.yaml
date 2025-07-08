@@ -120,7 +120,7 @@ diagnosticMode:
 ##
 image:
   registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
-  repository: bitnami/postgresql@sha256:00f50837cfdf0558b6c497baca104d01266a577547cd095ddad7306a90ea81ea
+  repository: bitnami/postgresql
   tag: 17.5.0-debian-12-r16
   digest: ""
   ## Specify a imagePullPolicy
@@ -131,10 +131,10 @@ image:
   ## Secrets must be manually created in the namespace.
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   ## Example:
-  ## pullSecrets:
-  ##   - myRegistryKeySecretName
+  pullSecrets:
+    - regcred
   ##
-  pullSecrets: []
+  ## pullSecrets: []
   ## Set to true if you would like to see extra information on logs
   ##
   debug: false
@@ -1598,7 +1598,7 @@ volumePermissions:
   ##
   image:
     registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
-    repository: bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
+    repository: bitnami/os-shell
     tag: 12-debian-12-r47
     digest: ""
     pullPolicy: IfNotPresent
@@ -1606,10 +1606,10 @@ volumePermissions:
     ## Secrets must be manually created in the namespace.
     ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
     ## Example:
-    ## pullSecrets:
-    ##   - myRegistryKeySecretName
+    pullSecrets:
+      - regcred
     ##
-    pullSecrets: []
+    ## pullSecrets: []
   ## Init container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
@@ -1707,7 +1707,7 @@ metrics:
   ##
   image:
     registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
-    repository: bitnami/postgres-exporter@sha256:6850fb35892b96556f6e25c711f7dee8e3456f87def1ad54806b5e83d714f63b
+    repository: bitnami/postgres-exporter
     tag: 0.17.1-debian-12-r11
     digest: ""
     pullPolicy: IfNotPresent
@@ -1715,10 +1715,10 @@ metrics:
     ## Secrets must be manually created in the namespace.
     ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
     ## Example:
-    ## pullSecrets:
-    ##   - myRegistryKeySecretName
+    pullSecrets:
+      - regcred
     ##
-    pullSecrets: []
+    ## pullSecrets: []
   ## @param metrics.collectors Control enabled collectors
   ## ref: https://github.com/prometheus-community/postgres_exporter#flags
   ## Example:

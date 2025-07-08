@@ -11,9 +11,11 @@ config:
 fullnameOverride: ""
 image:
   pullPolicy: IfNotPresent
-  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/apache/tika@sha256:bd7b85bacaa429597c6f992b191f1fa00ab6d4f58e624ed68b92e53304e4e76c
+  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/apache/tika
   tag: 2.9.0.0
-imagePullSecrets: []
+# imagePullSecrets: []
+imagePullSecrets:
+ - name: regcred
 ingress:
   annotations: {}
   enabled: false

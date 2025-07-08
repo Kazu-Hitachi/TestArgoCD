@@ -23,7 +23,7 @@ knative:
 # Docker image
 image:
   # -- Docker image registry
-  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/ollama/ollama@sha256:645aaf6b7dac1557e5e24c83f0767eb29695de05ee071ed39a858d3724938c98
+  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/ollama/ollama
 
   # -- Docker pull policy
   pullPolicy: IfNotPresent
@@ -32,7 +32,9 @@ image:
   tag: latest
 
 # -- Docker registry secret names as an array
-imagePullSecrets: []
+# imagePullSecrets: []
+imagePullSecrets:
+ - name: regcred
 
 # -- String to partially override template  (will maintain the release name)
 nameOverride: ""
