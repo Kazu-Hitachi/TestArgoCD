@@ -126,7 +126,7 @@ replicaCount: 1
 strategy: {}
 # -- Open WebUI image tags can be found here: https://github.com/open-webui/open-webui
 image:
-  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/ghcr.io/open-webui/open-webui@sha256:28f5256ec4cd22e9be4d1956273dcac6ffbdf537a312d5d556ba8e4b3fdb944d
+  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/ghcr.io/open-webui/open-webui
   tag: latest
   pullPolicy: "IfNotPresent"
 
