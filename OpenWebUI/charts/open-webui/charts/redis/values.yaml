@@ -112,7 +112,8 @@ diagnosticMode:
 ## @param image.debug Enable image debug mode
 ##
 image:
-  repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/redis@sha256:82e6c8e30f3f494dee4774376038fe7424273fb99c3ccebec8ee2a009537a1d4
+  registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+  repository: bitnami/redis@sha256:82e6c8e30f3f494dee4774376038fe7424273fb99c3ccebec8ee2a009537a1d4
   tag: 8.0.3-debian-12-r1
   digest: ""
   ## Specify a imagePullPolicy
@@ -1183,7 +1184,8 @@ sentinel:
   ## @param sentinel.image.debug Enable image debug mode
   ##
   image:
-    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/redis-sentinel@sha256:a9ad0e920ddc1bf8685bc40ee1eefa1d6d033e40e11a1b8b5855c2187ba78f53
+    registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+    repository: bitnami/redis-sentinel@sha256:a9ad0e920ddc1bf8685bc40ee1eefa1d6d033e40e11a1b8b5855c2187ba78f53
     tag: 8.0.3-debian-12-r1
     digest: ""
     ## Specify a imagePullPolicy
@@ -1781,7 +1783,8 @@ metrics:
   ## @param metrics.image.pullSecrets Redis(R) Exporter image pull secrets
   ##
   image:
-    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/redis-exporter@sha256:57fc8b4de6b8f13cfd4609c9ecf72c74dd836fe2abc03f5784960345f3304ff2
+    registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+    repository: bitnami/redis-exporter@sha256:57fc8b4de6b8f13cfd4609c9ecf72c74dd836fe2abc03f5784960345f3304ff2
     tag: 1.74.0-debian-12-r1
     digest: ""
     pullPolicy: IfNotPresent
@@ -2158,7 +2161,8 @@ volumePermissions:
   ## @param volumePermissions.image.pullSecrets OS Shell + Utility image pull secrets
   ##
   image:
-    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
+    registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+    repository: bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
     tag: 12-debian-12-r47
     digest: ""
     pullPolicy: IfNotPresent
@@ -2221,7 +2225,8 @@ kubectl:
   ## @param kubectl.image.pullSecrets Kubectl pull secrets
   ##
   image:
-    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/kubectl@sha256:5d75063f22760b6de5e676596ae3772e2e35c3483ae033a3a008dbffe77574ab
+    registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+    repository: bitnami/kubectl@sha256:5d75063f22760b6de5e676596ae3772e2e35c3483ae033a3a008dbffe77574ab
     tag: 1.33.2-debian-12-r2
     digest: ""
     ## Specify a imagePullPolicy
@@ -2289,7 +2294,8 @@ sysctl:
   ## @param sysctl.image.pullSecrets OS Shell + Utility image pull secrets
   ##
   image:
-    repository: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow/bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
+    registry: pj-registry.soft-seigi.intra.hitachi.co.jp/cs3_dify_workflow
+    repository: bitnami/os-shell@sha256:2bd75b4139614138c256f7cb5a0928a6215279f775d4804580401cd85f418626
     tag: 12-debian-12-r47
     digest: ""
     pullPolicy: IfNotPresent
