@@ -21,7 +21,7 @@ annotations:
   licenses: MIT
 dependencies:
   - name: ollama
-    repository: https://github.com/Kazu-Hitachi/TestArgoCD/ollama-1.23.0/ollama
+    repository: https://github.com/Kazu-Hitachi/ollama
     version: '>=0.24.0'
     import-values:
       - child: service
